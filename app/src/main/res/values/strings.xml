@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">hw6</string>
+    <string name="group"><u>Queen</u></string>
+    <string name="songname">I Want to Break Free</string>
+    <string name="lyrics">
+\nI want to break free, I want to break free\n
+I want to break free from your lies\n
+You\'re so self-satisfied I don\'t need you\n
+I\'ve got to break free\n
+God knows, God knows I want to break free\n
+I\'ve fallen in love\n
+I\'ve fallen in love for the first time\n
+This time I know it\'s for real\n
+I\'ve fallen in love, yeah\n
+God knows, God knows I\'ve fallen in love\n
+It\'s strange but it\'s true, hey\n
+I can\'t get over the way you love me like you do\n
+But I have to be sure when I walk out that door\n
+Oh, I want to be free, baby\n
+Oh, how I want to be free\n
+Oh, I want to break free</string>
+
+    <string name="group2"><u>AC/DC></u></string>
+    <string name="songname2">Back In Black</string>
+    <string name="lyrics2">
+\nBack in black\n
+I hit the sack\n
+I\'ve been too long, I\'m glad to be back\n
+Yes, I\'m let loose\n
+From the noose\n
+That\'s kept me hanging about\n
+I\'ve been looking at the sky\n
+\'Cause it\'s gettin\' me high\n
+Forget the hearse \'cause I never die\n
+I got nine lives\n
+Cat\'s eyes\n
+Abusin\' every one of them and running wild\n
+\'Cause I\'m back\n
+Yes, I\'m back\n
+Well, I\'m back\n
+Yes, I\'m back\n
+Well, I\'m back, back\n
+Well, I\'m back in black\n
+Yes, I\'m back in black\n
+Back in the back\n
+Of a Cadillac\n
+Number one with a bullet, I\'m a power pack\n
+Yes, I\'m in a bang\n
+With a gang\n
+They\'ve got to catch me if they want me to hang\n
+\'Cause I\'m back on the track\n
+And I\'m beatin\' the flack\n
+Nobody\'s gonna get me on another rap\n
+So look at me now\n
+I\'m just makin\' my play\n
+Don\'t try to push your luck, just get out of my way\n
+\'Cause I\'m back\n
+Yes, I\'m back\n
+Well, I\'m back\n
+Yes, I\'m back\n
+Well, I\'m back, back\n
+Well, I\'m back in black\n
+Yes, I\'m back in black\n
+Well, I\'m back, yes, I\'m back\n
+Well, I\'m back, yes, I\'m back\n
+Well, I\'m back, back\n
+Well, I\'m back in black\n
+Yes, I\'m back in black\n
+Oh, yeah\n
+Oh, yeah\n
+Take my love\n
+Oh, yeah, yeah\n
+Oh, yeah, yeah, ooh, yeah\n
+Well, I\'m back (I\'m back)\n
+Back (I\'m back)\n
+Back (I\'m back)\n
+Back (I\'m back)\n
+Back (I\'m back)\n
+Back\n
+Back in black\n
+Yes, I\'m back in black\n
+I\'ve hit the sack</string>
+
+    <string name="welcome">Приложение запущено на смартфоне %1$s.\nВремя запуска : %2$d : %3$d\nПользователем : %4$s</string>
+</resources>

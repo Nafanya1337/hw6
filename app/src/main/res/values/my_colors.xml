@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textViewBackColor">#D900FF</color>
+    <color name="textViewFontColor">#42E0CC</color>
+</resources>

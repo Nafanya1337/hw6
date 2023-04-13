@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="regularTextSize">20dp</dimen>
+    <dimen name="miniTextSize">10dp</dimen>
+    <dimen name="regularPadding">10dp</dimen>
+    <dimen name="regularMarginTop">15dp</dimen>
+</resources>

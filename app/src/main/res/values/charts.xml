@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="top_charts">
+        <item name="first_place">Queen</item>
+        <item name="second_place">AC/DC</item>
+        <item name="third_place">Metallica</item>
+    </string-array>
+</resources>

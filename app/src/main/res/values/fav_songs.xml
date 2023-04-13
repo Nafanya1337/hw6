@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="songs">
+        <item quantity="one">%d песня</item>
+        <item quantity="many">%d песен</item>
+        <item quantity="few">%d песни</item>
+    </plurals>
+
+</resources>

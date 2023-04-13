@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/queen_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/regularMarginTop"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/group"
+        android:clickable="true"
+        android:onClick="openGroupPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regularMarginTop"
+        android:gravity="center"
+        android:text="@string/group"
+        android:textColor="#0363FC"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/songname"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toBottomOf="@id/group" />
+
+    <TextView
+        android:id="@+id/lyrics"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lyrics"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/songname" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Сменить песню"
+        android:onClick="changeSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyrics" />
+
+    <LinearLayout
+        android:id="@+id/string_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Сколько ваших любимых песен группы Queen"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/string_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:onClick="makeFavourite"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@id/minus"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:onClick="makeFavourite"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@id/count"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <TextView
+        android:id="@+id/charts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/count"
+        android:text="Чарты"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/list_charts"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/top_charts"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/charts" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_charts"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Оцените наше приложение"
+        android:textSize="@dimen/regularTextSize"
+        android:padding="@dimen/regularPadding"
+        android:layout_marginTop="@dimen/regularMarginTop"
+        android:textColor="@color/textViewFontColor"
+        android:background="@color/textViewBackColor"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:numStars="0"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rate"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
